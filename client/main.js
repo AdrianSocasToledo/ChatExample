@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.67:6677',{'forceNew':true});
+var socket = io.connect('',{'forceNew':true}); //aqui va la IP del server al que conectarse.
 
 socket.on('messages',function(data){
     console.log(data);
