@@ -1,3 +1,3 @@
 # ChatExample
-Un pequeño chat hecho con NodeJs y Sockets.io --> https://gofiochat.herokuapp.com/
+Un pequeño [chat](https://gofiochat.herokuapp.com/) hecho con NodeJs y Sockets.io
 
