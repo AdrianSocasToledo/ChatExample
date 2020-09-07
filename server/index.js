@@ -4,6 +4,9 @@ var server = require("http").Server(app);
 var io = require("socket.io")(server);
 
 app.use(express.static("client"));
+app.get("/", function (req, res) {
+  res.send("Hola Mundo");
+});
 app.get("/hola-mundo", function (req, res) {
   res.status(200).send("Hola mundo desde una ruta");
 });
