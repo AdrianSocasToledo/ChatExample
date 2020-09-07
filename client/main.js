@@ -1,4 +1,6 @@
-var socket = io.connect("http://localhost:6677", { forceNew: true }); //aqui va la IP del server al que conectarse.
+var socket = io.connect("https://gofiochat.herokuapp.com:3000", {
+  forceNew: true,
+}); //aqui va la IP del server al que conectarse.
 
 socket.on("messages", function (data) {
   console.log(data);
