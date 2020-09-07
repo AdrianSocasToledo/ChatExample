@@ -7,9 +7,6 @@ app.use(express.static("client"));
 app.get("/", function (req, res) {
   res.send("Hola Mundo");
 });
-app.get("/hola-mundo", function (req, res) {
-  res.status(200).send("Hola mundo desde una ruta");
-});
 
 var message = [
   {
@@ -32,6 +29,6 @@ io.on("connection", function (socket) {
   });
 });
 
-server.listen(3000, function () {
-  console.log("Servidor está funcionando en http://localhost:6677");
+server.listen(process.env.PORT || 5000, function () {
+  console.log("Servidor está funcionando...");
 });
