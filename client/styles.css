@@ -26,11 +26,22 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 5px;
+  /* padding: 10px 5px; */
+  padding-bottom: 10px;
   
   border: 8px solid rgb(75, 74, 74);
   border-radius: 30px;
   box-shadow: 0px 0px 30px rgb(88, 88, 88) ;
+}
+
+
+.cabecera {
+  padding: -10px -5px;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  margin-bottom: 5px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 #messages{
@@ -43,8 +54,11 @@ h1 {
   width: 95%;
   height: 90%;
   border-radius: 2px;
-  overflow-y: auto ;
+  overflow-y: scroll ;
+}
 
+#messages::-webkit-scrollbar {
+  color: transparent;
 }
 
 .message{
@@ -62,7 +76,6 @@ h1 {
 
 .infoEnviar {
   margin-top: 10px;
-  /* background-color: red; */
   width: 95%;
   height: 10%;
 
