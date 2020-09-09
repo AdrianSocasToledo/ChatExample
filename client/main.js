@@ -1,4 +1,4 @@
-var socket = io.connect("https://", {
+var socket = io.connect("https://localhost:5000", {
   forceNew: true,
 }); //aqui va la IP del server al que conectarse.
 
