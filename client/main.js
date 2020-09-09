@@ -13,8 +13,12 @@ texto.addEventListener('keyup', (event) => {
 })
 
 
-// let boton = document.querySelector('.botonEnviar')
-// boton.addEventListener('click', addMessage)
+let boton = document.querySelector('.botonEnviar')
+boton.addEventListener('click', () => {
+  addMessage()
+  texto.value = ""
+  event.preventDefault();
+})
 
 
 socket.on("messages", function (data) {
