@@ -49,7 +49,6 @@ h1 {
 
 .message{
   display: flex;
-  justify-content: space-between;
   margin-top: 5px;
   margin-bottom: 15px;
   padding: 5px;
@@ -78,11 +77,11 @@ h1 {
 
 #text {
   resize: none;
-  background-color: rgb(167, 197, 223);
+  background-color: rgb(243, 243, 243);
   width: 85%;
   border: solid rgb(26, 47, 144) 2px;
   border-radius: 15px;
-
+  
   padding-left: 5px;
   overflow: hidden;
   outline: none;
@@ -97,7 +96,7 @@ h1 {
   width: 15%;
   height: 80%;
   border-radius: 50%;
-  background-color: rgb(167, 197, 223);
+  background-color: rgb(243, 243, 243);
   border-color: rgb(26, 47, 144);
   outline: none;
 
