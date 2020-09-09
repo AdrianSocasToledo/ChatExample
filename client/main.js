@@ -1,4 +1,4 @@
-var socket = io.connect("https://localhost:5000", {
+var socket = io.connect("http://localhost:5000", {
   forceNew: true,
 }); //aqui va la IP del server al que conectarse.
 
@@ -12,7 +12,7 @@ function render(data) {
     .map(function (message, index) {
       return `
             <div class="message">
-                <strong>${message.nickname}</strong> : 
+                <strong>${message.nickname}: </strong>
                 <span>${message.text}</span>
             </div>
         `;

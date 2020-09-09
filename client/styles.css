@@ -28,19 +28,38 @@ h1 {
   align-items: center;
   padding: 10px 5px;
   
-  /* overflow-y: scroll ; */
   border: 8px solid rgb(75, 74, 74);
   border-radius: 30px;
   box-shadow: 0px 0px 30px rgb(88, 88, 88) ;
 }
 
 #messages{
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 12px;
+  background-color: transparent;
   width: 95%;
   height: 90%;
-  border-radius: 15px;
+  border-radius: 2px;
+  overflow-y: auto ;
 
 }
+
+.message{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background:white;
+  color:rgb(26, 47, 144);
+
+}
+
 
 .infoEnviar {
   margin-top: 10px;
