@@ -2,6 +2,21 @@ var socket = io.connect("http://localhost:5000", {
   forceNew: true,
 }); //aqui va la IP del server al que conectarse.
 
+let nickname = document.getElementById("nickname")
+
+let texto = document.querySelector('#text')
+texto.addEventListener('keyup', (event) => {
+  if (event.key == 'Enter') {
+    addMessage()
+    texto.value = ""
+  }
+})
+
+
+// let boton = document.querySelector('.botonEnviar')
+// boton.addEventListener('click', addMessage)
+
+
 socket.on("messages", function (data) {
   console.log(data);
   render(data);
@@ -28,11 +43,12 @@ function render(data) {
 
 function addMessage(e) {
   var message = {
-    nickname: document.getElementById("nickname").value,
-    text: document.getElementById("text").value,
+    nickname: nickname.value,
+    text: texto.value,
   };
   
-  document.getElementById("nickname").style.display = "none"
+  console.log("hola")
+  nickname.style.display = "none"
   socket.emit("add-message", message);
   return false
 }
