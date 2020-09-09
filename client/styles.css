@@ -1,4 +1,4 @@
-body {
+body * {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,11 +43,48 @@ h1 {
 
 .infoEnviar {
   margin-top: 10px;
-
-  background-color: red;
+  /* background-color: red; */
   width: 95%;
   height: 10%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 
 
+#texto {
+  background-color: rgb(167, 197, 223);
+  width: 85%;
+  border: solid rgb(33, 104, 161) 2px;
+  border-radius: 15px;
+
+  padding-left: 5px;
+  overflow: hidden;
+  outline: none;
+  color:rgb(26, 47, 144);
+}
+
+.botonEnviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  width: 15%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: rgb(167, 197, 223);
+  border-color: rgb(33, 104, 161);
+  outline: none;
+
+  font-size: 15px;
+  color: rgb(26, 47, 144);
+
+}
+
+.botonEnviar:hover {
+  cursor: pointer;
+} 

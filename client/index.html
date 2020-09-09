@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/96fa369135.js" crossorigin="anonymous"></script>
     <title>Chat</title>    
 </head>
@@ -16,9 +17,11 @@
       <div id="messages"></div>        
       
       <div class="infoEnviar">
-
+        <textarea id="texto" placeholder="Mensaje"></textarea>
+        <button class="botonEnviar" type="submit"><i class="fas fa-paper-plane"></i></button>
       </div>
     </div>
+
     <form onsubmit="return addMessage(this);">
       <input id="nickname" type="text" placeholder="Nick">
       <textarea id="text" placeholder="mensaje"></textarea>
