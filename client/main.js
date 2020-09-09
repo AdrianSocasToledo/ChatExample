@@ -7,9 +7,10 @@ socket.on("messages", function (data) {
   render(data);
 });
 
+
 function render(data) {
   var html = data
-    .map(function (message, index) {
+    .map(function (message) {
       return `
             <div class="message">
                 <strong>${message.nickname}: &nbsp</strong>
@@ -24,12 +25,13 @@ function render(data) {
   div_messages.scrollTop = div_messages.scrollHeight;
 }
 
+
 function addMessage(e) {
   var message = {
     nickname: document.getElementById("nickname").value,
     text: document.getElementById("text").value,
   };
-
+  
   document.getElementById("nickname").style.display = "none"
   socket.emit("add-message", message);
   return false

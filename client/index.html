@@ -17,14 +17,15 @@
       <div id="messages"></div>        
       
       <div class="infoEnviar">
-        <textarea id="text" placeholder="Mensaje"></textarea>
-        <button class="botonEnviar" type="submit"><i class="fas fa-paper-plane"></i></button>
+        <form class="form" onsubmit="return addMessage(this);">
+          <textarea id="text" placeholder="Mensaje"></textarea>
+          <button class="botonEnviar" type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
       </div>
     </div>
 
-    <form onsubmit="return addMessage(this);">
-      <input id="nickname" type="text" placeholder="Nick">
-      <input type="submit" value="Enviar">      
+    <form class="nickBox" onsubmit="return addMessage(this);">
+      <input id="nickname" type="text" placeholder="Nick">   
     </form>
 
     
