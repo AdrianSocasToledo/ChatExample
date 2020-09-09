@@ -76,7 +76,7 @@ h1 {
 
 
 
-#texto {
+#text {
   resize: none;
   background-color: rgb(167, 197, 223);
   width: 85%;
@@ -109,3 +109,8 @@ h1 {
 .botonEnviar:hover {
   cursor: pointer;
 } 
+
+
+form {
+  margin-top: 20px;
+}

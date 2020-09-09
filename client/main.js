@@ -12,7 +12,7 @@ function render(data) {
     .map(function (message, index) {
       return `
             <div class="message">
-                <strong>${message.nickname}: </strong>
+                <strong>${message.nickname}: &nbsp</strong>
                 <span>${message.text}</span>
             </div>
         `;
